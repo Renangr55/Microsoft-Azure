@@ -1,0 +1,443 @@
+MODULO 1
+computação em nuvem
+- serviço de computação fornecido através de internet:
+  armazenamento
+  rede
+  análise
+  computação
+
+nuvem publica
+- pertencentes a serviços de nuvem ou provedor de hosting: como aws,azure,gcp,ibm cloud etc
+- provisiona serviços de forma simples e com o custo controlado
+- fornece recursos e serviços a várias organizações e usuários: várias organizações utilizam da nuvem publica, mas, não é só por que ela é publica que as outras organizações podem acessar o seu espaço, é praticamente um espaço para cada um, na nuvem pública
+- acessado via conexão de rede segura(internet)
+- segura
+- modelo baseado a consumo
+- aplicativos podem ser rapidamente provisionados e de provisionados
+- nenhuma de despesa   de capital para escalar verticalmente - não preciso comprar nada, apena faço uso dos serviços
+
+Despesas de Capital) são investimentos de longo prazo em ativos fixos (máquinas, imóveis) para crescimento, com impacto contábil via depreciação ao longo dos anos,
+
+provisionar é providenciar
+
+nuvem privada
+- precisa de uma infraestrutura de hardware para inicialização e manutenção
+- organização tem o controle total de segurança
+- organização é responsável pela manunteção
+- organizações criam um ambiente de nuvem em seu datacenter
+- organização opera por seus serviços
+- usuários que não são da empresa da fora não tem acesso a nuvem ou se vc dar acesso
+
+nuvem hibrida
+- possui recursos das 2 nuvens
+- você pode escalar a capacidade do seu serviço de computação
+- permite que os locais
+- oferece maior flexibilidade
+- organizações escolhem onde seu vai executar seus aplicativos
+- organizações controlam os requisitos de segurança, conformidade ou juridico 
+
+___________________________________________________________________________________________________________________
+comparar CapEx e OpEx
+CapEx:
+- custo é reduzido ao passar dos anos
+- gasto inicial de dinheiro na infraestrutura física
+- despesas físicas
+OpEx
+- você paga apenas pelo a quantidade de uso
+- recebe a conta Imediatamente
+___________________________________________________________________________________________________________________
+
+Modelo baseado a consumo
+- você paga pelo o que você consome
+- você consegue fazer uma previsibilidade do seu futuro gasto
+- preços dão fornecidos para serviço e recursos individuais
+- cobrança é baseada no uso real
+
+___________________________________________________________________________________________________________________
+IAAS - infraesctruture as a service
+
+a azure fica responsável pelo parte de infraestrutura, como:
+- Virtualização
+- Servidores
+- armazenamento
+- internet
+- segurança de rede / firewalls
+
+e você fica responsável, por:
+- gerenciar aplicações
+- dados
+- tempo de execução
+- sistema operacional
+- middleware(software que fica no intermédio do sistema operacional e aplicações)
+
+___________________________________________________________________________________________________________________
+
+PAAS - plataforma as a service
+azure fica responsável por tudo, menos dados e o gerenciamento de aplicações, por que você é responsável por isso
+___________________________________________________________________________________________________________________
+SAAS - software as a service
+Software como serviço, exemplo: pacote da adobe, pacote 365 da Microsoft
+
+aqui o provedor de nuvem é responsável por tudo, você só é responsável pelo seu dados
+___________________________________________________________________________________________________________________
+on-premisses - datacenter físico no local:
+Você é responsável por tudo
+___________________________________________________________________________________________________________________
+computação sem servidor só que não - ele tem servidor, só que vc não sabe detalhes sobre ele - modelo que o seu código é um script é executado com um estimulo interno
+
+provedor de serviço de nuvem provisiona, escala e gerencia automaticamente a infraestrutura necessária para executar o código
+- azure functions:
+é um código que esta executando o seu serviço e não infra ou plataforma subjacente, ele cria a infra com base em um eveno
+(PESQUISAR MAIS SOBRE)
+___________________________________________________________________________________________________________________ aplicativos lógicos do azure são serviços de nuvem que ajuda na automatização e na orquestração de tarefas, processos empresariais e fluxos  de trabalho quando é preciso integrar aplicativos e dados, sistemas e serviços
+
+___________________________________________________________________________________________________________________
+
+MODULO 2:
+
+Região é uma localização física onde vc pode ter 1 ou 2 ou mais datacenters e uma região.
+- azure é o provedor que mais oferece regiões globais do que qualquer outro provedor
+- mais de 60 regiões e representa mais de 40 países
+- as regiões são composta por 1 ou mais 2 datacenter muito proximos - para que se caso um entre em inatividade, tem o outro
+- você consegue ter redundancias de dados nas suas aplicações
+
+pares de região:
+são pares que possuem 2 regiões com uma certa distância
+- minimos 300 milhas de separação entre pares de regiões
+- replicação automatica para alguns serviços
+- recuperação e região priorizada em caso de interrupção
+- As atualizações são lançadas sequencialmente para minimizar o tempo de inatividade
+- caso, tenha uma inatividade de uma região no brasil, o seu serviço vai rodar no estados unidos, então é bom, você conhecer a região par da sua.
+
+Opções de disponibilidade
+
+SLA VM
+- 99,9% com armazenamento Premium, cerca de 40 minutos por mês de inatividade
+- VM unica
+- lift-and-shift mais fácil
+
+SLA VM
+99,99%
+zona de disponibilidade
+proteção contra falhas de datacenter inteiro
+caso, você queira aumentar a disponibilidade dessa VM, você pode usar uma zona de disponibilidade
+
+Recuperação de várias regiões
+Região 1 <-> Região 2
+pares de região
+proteção regional dentro dos limites de residência de dados
+
+
+zona de disponibilidade
+- oferece proteção contra tempo de inatividade, so um datacenter falhe
+- separa fisicamente os datacenters dentro da região
+- os datacenter é equipado com alimentação necessario, resfriamento de rede independentes
+- conectado pormeio de redes privadas de fibra óptica 
+
+___________________________________________________________________________________________________________________
+
+Recursos da azure - item
+- armazenamento
+- contas de armazenamento
+- funções
+- serviços de aplicativos
+- banco de dados sql
+- rede virtuais
+
+Grupos de recursos - uma caixa de item
+é um contêiner que armazena o que você tem de recursos
+- um recurso precisa estar em um grupo
+- você escolhe onde fica o seu grupo de recurso, pode ser em qualquer lugar, se vc quer separa seus recursos fisicamente, você pode também
+
+- grupo de recurso:
+WEB + BD,VM e armazenamento em um só grupo ou
+grupo de recruso web e bd
+grupo de recurso máquina virtual
+grupo de recurso de armazenamento
+
+você não pode criar um grupo de recurso dentro de outro grupo de recurso, ele não pode ser aninhado
+
+eu uso grupo de recurso para ser uma forma fácil de você 
+- conseguir encontrar quais são os recursos que estão la dentro
+- quem pode acessar
+- e quanto custa essa caixa
+
+AGRUPANENTO LÒGICO que facilita a vida, quando a gente pesquisa um recurso
+- quando você exclui esse grupo, ele exclui automaticamente todos os recursos
+
+___________________________________________________________________________________________________________________
+
+ARM - o azure resource manager - gerenciador e recurso da azure
+
+oferece uma camada de gestão que permite que você crie, atualize e exclui recursos da sua assinatura azure
+- você consegue gerenciar através de:
+portal do azure
+azure powershell
+cli do azure 
+cliente rest - api
+___________________________________________________________________________________________________________________
+
+assinaturas do azure
+
+uma assinatura da azure fornece autenticação e autorização para utilizar os recursos da azure
+- limite de cobrança: gerar faturas e relatórios de cobrança separados para cada assinatura
+
+- limite de controle de acesso: gerenciar e controlar os recursos que os usuários provisionam com assinaturas especificas
+
+na conta do azure possui tipos de assinaturas:
+- assinatura do desenvolvedor
+- assinatura de teste
+- assinatura de produção
+
+são UNIDADES LÓGICAS dentro de uma conta da azure
+
+você pode criar limites em cada unidade
+
+você pode gerenciar cada acesso dentro das assinaturas
+___________________________________________________________________________________________________________________
+
+Grupos de gerenciamento
+- grupos de gerenciamento podem incluir várias assinaturas do azure
+- as assinaturas herdam as condições dos grupos de gerenciamento
+- possível oferecer suporte a 10.000 grupos de gerenciamento em um único diretório
+- uma árvore de grupos pode oferecer suporte até 6 níveis de profundidade
+- tudo o que vc aplica no grupo d gerenciamento, afeta a assinatura, grupo de recursos e recursos
+- você usa muito para aplicar regras de politica, controle de acesso
+
+___________________________________________________________________________________________________________________
+
+Serviços de computação:
+a computação do azure é um serviço de computação sob demanda que fornece recursos de computação, como discos, processadores, memória ,rede e sistemas operacionais, como:
+- máquinas virtuais
+- aplicativo aplicativos
+- instancias de contêiner
+- serviço de kubernetes do azure (AKS) 
+- área de trabalho virtual do azure
+___________________________________________________________________________________________________________________
+
+máquina virtual emula softwares e sistemas operacionais de computadores físico para uma solução virtual
+- inclui processador virtual, memória virtual e armazenamento e rede
+- Oferta de IaaS que oferece personalização e controle total
+
+
+___________________________________________________________________________________________________________________
+
+serviço do aplicativo do azure: - é meio que
+uma plataforma da azure que permite você gerenciar suas aplicações para cirar,implantar e escalar aplicativos web e APIs com rapidez
+- trabalha com várias linguagens: python,java,php,Node js,.NET e .NET CORE
+- oferta Paas, por que eu não preciso me preocupar com a infra
+
+
+___________________________________________________________________________________________________________________serviço de contêneres do azure é um ambiente virtualizado leve que não exige o gerenciamento do sistema operacional e pode responder a mudança sore demanda
+
+- é uma unidade de agregação portátil que agrega uma aplicação e suas dependências
+- ela garante que você consegue rodar sua aplicação em outro ambiente
+
+
+instancias de Contêiner do azure: uma oferta PaaS que executa um contêiner no Azure sem precisar gerenciar uma máquina virtual ou serviços adicionais
+
+serviço de kubernetes do azure:
+um serviço de orquestração para conteiners com arquitetura distribuídas e grande volumes de contêneires.
+
+para escalar conteineis e colocar regras, vc utiliza o serviço de kubernetes
+___________________________________________________________________________________________________________________
+
+Área de trabalho virtual do azure é uma virtualização de desktop que roda em nuvem
+- crie um ambiente completo de virtualização da área de trabalho sem precisar executar outros servidores de gateway
+- publica pools de host ilimitados para acomodar várias cargas de trabalho
+- reduz custo com recursos de pool, com várias sessões.
+
+é um ambiente supervisionado onde várias pessoas podem acessar também
+___________________________________________________________________________________________________________________
+
+Serviços de rede
+
+- rede virtual (Vnet) do azure é uma rede virtual que permite que você se conecte a internet e rede locais
+- gateway de rede virtual privada(VPN) é um tubo criptográfico entre a rede da azure e um local na internet publica
+- express route do azure amplia redes locais para o azure por meio de uma conexão privada facilitada por um provedor de conectividade
+
+
+serviços de armazenamento:
+- armazenamento de container (blob) é otimizado para armazenar grandes quantidades de dados não estruturado com dados binários ou de texto, você pode guardar imagens, PDFs etc
+
+-armazenamento de disco igual um ssd e hd físico só que na nuvem
+
+- Arquivos do azure é meio que uma pasta virtual, você configura compartilhamentos de arquivos de rede altamente disponíveis que podem ser acessados usando o protovolo (SMB)
+
+CAMADAS DE ACESSO DE ARMAZENAMENTO DO AZURE
+
+Frequente: arquivos acessados com grande frequência
+Esporádico: otimizada para arquivos com pouca frequência de acesso, armazenado pelo menos há 30 dias, para ler é mais caro
+Arquivar: otimizada para armazenamento de dados acessados raramente ,pelo menos 180 dias com requisitos de latência flexíveis, quase não conta armazenamento e mais cobra caro para ler
+
+VOCÊ PODE ALTERAR ESSAS CAMADA DE ACESSO A QUALQUER MOMENTO
+___________________________________________________________________________________________________________________
+
+Seviço de banco de dados da azure
+
+Azure cosmo database é um serviço de banco de dados distribuído globalmente que escala de maneira elástica e independente a taxa de transferência e o armazenamento
+
+bancos de dados sql do azure: banco de dados relacional como serviço(DAAS) baseado na ultima versão estável do microsfot sql server
+
+banco de dados do azure para mysql: serviço de bacno para mysql, gerenciado pelo desenvolvedores das aplicações
+
+banco de dados do azure para PostgreSQL: é um serviço de banco de dados relacional baesado no mecanismo de banco de dados postgres open-source
+
+Instancias gerenciada do SQL do azure permite clientes existentes do SQL server façam "lif and shift" dos aplicativos locais para a nuvem com mínimo de alterações no aplicativo e no banco de dados
+- plataforma como serviço sempre atualizada
+- preserva todos os recursos de PAAS(atualizações de versão e aplicação de patch automáticos, backups autoatizados e alta disponibilidade)
+-troca as licenças existentes para taxas descontadas na instancia gerenciada de SQL usando o benefício híbrido do azure
+
+___________________________________________________________________________________________________________________
+
+marketplace da azure: uma lojinha de recurso da azure que você consegue provisionar aplicativos,serviços etc
+- imagens da máquina virtual e do banco de dados
+- software de compilação e implantação de aplicativos
+- ferramentas para desenvolvedores
+- mais 10000 itens listados
+
+___________________________________________________________________________________________________________________
+
+Módulo 3: principais soluções da azure
+- azure iot central é uma solução SaaS de iot global totalmente gerenciada que facilita você monitorar e gerenciar ativos de iot em escala
+- hub iot do azure é um serviço hospedado na nuvem que atua como hub central de menagens para comunicação bodirecional entre os aplicativos de IoT e os dispositivos que ele gerencia
+- Azure sphere uma plataforma de aplicativo segura e de alto nível com recursos internos de comunicação e segurança para dispositivos conectados a internet
+
+___________________________________________________________________________________________________________________
+
+
+Big data e analise
+
+ferramentas que da suporte para isso
+-azure synapse analytics
+um enterprise data warehouse baseado em nuvem
+warehouse seus dados estão estruturados
+ele também faz o trabalho de datalake
+
+-azure HDinsight
+um serviço de análise open-source e totalmente gerenciado para empresas
+ideia de bigdata
+
+- azure databricks
+serviço de análise baseado no apache spark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
