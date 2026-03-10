@@ -322,16 +322,297 @@ ideia de bigdata
 serviço de análise baseado no apache spark
 
 
+__________________________________________________________________________________________________________________________________________________________
+
+Inteligência artificial e machine learning
+
+azure machine learning: baseado em nuvem para desenvolver,treinar e implantar modelos
+
+serviços cognitivos: habilitar rapidamente os app para ver, ouvir, falar, entender e interpretar as necessidades de um usuário
+
+serviço de bot do azure: desenvolvimento de bots
+__________________________________________________________________________________________________________________________________________________________desenvolver aplicativos com DevOps e GitHub
+- azure devops: ferramentas de coaboração de desenvolvimento, incluindo pipelines,cartões Kanban e testes de cargas baseado em nuvem
+- GitHub: todo mundo conhece
+- GitHub actions para azure: automatizar fluxo de trabalho de software ara criar, testar e implantar de dentro do GitHub
+- Azure devtest lab: criar rapidamente ambiente no azure enquanto minimiza os gastos
+ 
+__________________________________________________________________________________________________________________________________________________________
+
+Ferramentas de gerenciamento disponiveis no azure
+- portal do azure
+- aplicativo model do azure
+- api rest do azure
+- azure power shell
+- CLI
+- azure cloud sheel
+com essas ferramentas vc consegue acessar ou gerenciar o ARM(azure resource management)
+
+ARM são arquivos Json que podem ser usados para criar e implantar a insfraetsrutura do azure sem precisar gravar comando de programação
+- sintaxe declarativa
+- Resultado reproduzíveis
+- orquestração
+- arquivos modulares
+- validação integrada
+- código exportável
+__________________________________________________________________________________________________________________________________________________________
 
 
+Assistente do azure: analisa os rcerusos implantados do azure e faz recomendações com base nas melhores praticas para optimzar as implantações do azure
+- confiabilidade
+- segurança
+- desempenho
+- custo
+- excel~encia operacional
+
+azure monitor é uma ferramenta que coleta mensagens e logs em suas aplicações, visualizar o desempenho dos serviços
+- apllications isights
+- analise de logs
+- alertas inteligentes
+- ações de automatização
+- paínes personalizado
+
+integridade do  serviço avalia o status dos serviços da azure,fornece uma visão personalizada da integridade de azure
+
+__________________________________________________________________________________________________________________________________________________________
 
 
+módulo 4 de segurança
+
+central de segurança monitora sua infraestrutura e sua nuvem, protege de ameaças no datacenter do azure e nos datacenter locais
+- fornece recomendação de segurança
+- detectar e bloquear malware
+- analisar e identificar possíves ataques
+- controle de acesso just-in-time
+
+possui 4 recursos
+- conformidade com a politica
+- recomendação personalizadas
+- avaliação continua
+- proteção conta ameaças
 
 
+azure sentinel é uma solução de que gerencia informações e segurança(SIEM) e de resposta automatizada de segurança (SOAR) que fornece uma análise de segurança e inteligência contra ameaças em uma empresa
+- conector e integrações
+- AD
+- Proteção contra ameaças do azure
+- mircosoft cloud app security
+
+o sentinel realiza cloeta de logs e dados
+responde sobre algum comportamento estranho, uma ameaça
+investiga oq pode estar acntecendo, essa investigação é feito em IA
+ele detecta ameaças
+
+key valt: é um cofre de senha, que é responsável por guardas os segredos da sua senha e certificado, ele gerencia isso
+- armazena segredos apoiados por módulos de segurança de hardware
+
+host dedicado do azure
+- fornece sevidores fisicos para hospedar máquina virtuais do azure dedicada a uma unica organização
+
+beneficios:
+- isolamento de hardware
+- controle sobre o tempo do evento de manutenção
+- alinhado com os beneficious hibridos do uso do azure
 
 
+modulo 4 parte 2
+
+proteção completa:
+- uma abordagem em camadas para proteger sistemas de computador
+- fornece vários niveis de proteção
+- ataques contra uma camada são isolados das camadas subsequentes
+cada camada de segurança possui um nivel  ais de segurança
+
+segurança compartilhada
+- migrar datacenters controlados para datacenter em nuvem, a responsabilidade muda
+
+Grupos de segurança de rede(NSGs)> filtra o trafego de rede nas rede virtuais do azure
+- definição de entrada e saida para filtrar por fonte e endereço IP de destino e protocolo
+- pode adicionar várias regras
+- o azure aplica regras de segurança de linha para novos NSGs
+- pode substituir regras padrão por regras novas e de prioridade mais alta
+- bloqueia portas tbm
+
+firewall do azure
+FaaS: firewalls como serviço 
+
+firewall protege de pessoas que não possui acesso liberado para entrar na rede
+- bloqueia portas
+- nega acesso com base no endereço de IP
 
 
+Proteção contra DDoS(Negação de serviço distribuidora) do azure
+esses ataques sobrecarregam a rede
+- limpa o trafego indesejado, antes que seu serviço caia
+- a camada de serviço basica, ja é ativada automaticamente e também adiciona recursos de mitigação ajustado para proteger os recursos de rede virtual do azure
+
+módulo 5: identidade, governancia, privacidade e conformidade
+
+principais serviços de identidade do azure:
+
+autenticação: é quando você prova quem você é
+autorização: é o nivel de acesso que você tem para acessar determinadas coisas
+
+
+autenticação de MFA
+- forma adicional que exigi 2 ou mais forma de autenticação
+composta por:
+- algo que você sabe
+- algo que você tem
+- algo que você é
+
+
+AD é o serviço de gerenciamento de usuarios,grupos,ativos e politicas de acesso da azure
+- autenticação
+- sso
+- gerenciamento de aplicativos
+- entre empresas (B2B)
+serviço de identidade entre empresa e cliente
+- gerenciamento de dispositivo
+
+acesso condicional é usado pelo ad para reunir sinais,tomar decisões e impor politicas
+- associação de usuarios ou grupos
+- locaização de IP
+- dispositivo
+- aplicativo
+- detecção de risco
+
+GOVERNANCIA
+
+RBAC(Controle de acesso baseado a função)
+
+- gerenciamento de acesso baseado a funções do usuário
+- segregações de acesso por área, por exemplo
+- gerenciamento do nivel de acesso de cada colaborador
+
+bloqueio de recurso
+- proteja os recursos do azure de exclusão ou alteração
+- gerencia bloqueios no nivel de assinatura, grupos de recursos ou recurso individuais
+- controle quem pode ler ou alterar e excluir
+
+marcas - tags
+- fornece tags para os recursos da azure, para indicar pessoas, centro de custo etc
+- organiza seus recursos
+- pode indicar que é o centro de custo,dono etc
+
+azure policy: ajuda a impor padrões organizacionais e avaliar conformidade em escala
+fornece governança e consistência de recursos com conformidade, regulamentar, segurança, custos e gerenciamento
+
+- avalie e identifica recursos do azure que não bate com a politica
+- fornece definições de políticas e iniciativas integradas, em categorias como armazenamento, rede, computação, central de segurança e monitoramento
+- conforme sua assinatura vai aumentando, imagina vc ficar revendo toda hora, da muito trabalho
+- aqui vc pode gerencia oq pode o que não pode fazer em seus recursos
+
+azure blueprints> é a ideia de criar ambientes com rapidez, facilita a criação de novos ambientes
+- atribuições de roles
+- atribuições de politicas
+- modelos de arm
+- grupo de recursos
+
+
+cloud adoption framework: ferramentas movientações e narrativas para estatégias de resultados
+- documentar movimentação, o que vc vai levar pra nuvem, cria sua estratégia
+- migração de dispositivos ou serviçs para nuvem
+- planejar
+- inovar
+gerenciar operações
+- controlar
+
+
+PRIVACIDADE
+
+as empresas hoje se importam com:
+segurança, privacidade e conformidade
+
+termos e requisitos de conformidade 
+- a microsofot fornece o conjunto mais abrangente de ofertas de conformidade - incluindo certificações e atestado de qualquer provedor de serviço de nuvem:
+tais ofertas incluem:
+- CJIS - serciço de informação da jsutiça criminal
+- certificação CSA STAR
+- Claúsulas de modelo UE
+- HIPAA
+- ISO/IEC 27018
+- NIST - nacional institute of standart and technology
+
+politica de privacidade da microsofot
+- promove abertura e honestidade como a Microsoft lida com seus dados
+
+termos dos serviço online e adendo de proteção de dados(DPA)
+- termos dos serviço online: os serviços adquiridos pela microsoft
+- O DPA estabelece as obrigações com relação ao processamento e segurança de dados do cliente
+
+trust center da Microsoft: todas as regras de privacidade e normas da microsoft
+
+documentação de conformidade da azure(ver sobre)
+
+
+regiões soberanas:
+
+atende as necessidades das agencias federais dos EUA, governos estaduais e locais e seus provedores de serviço
+
+azure government
+- instancia separada do azure
+- fisicamenre isolada de implantações que não sejam do governo dos eua
+- acessivel somente a pessoas e autoridade autorizadas.
+
+azure china: a Microsoft é o primeiro provedor estrangeiro de serviços de nuvem publica da china
+recursos da azure china:
+- instância fisicamente separada dos serviços de nuvem operada pela 21vianet
+- todos os dados permanecem dentro da china para garantir a conformidade
+
+modelo 6:preço e ciclo de vida
+
+o que mais afeta nos custos
+1- tipo de recurso: os custo são especificos do recursos, o custo depende do tipo do recurso
+2- serviço: as taxas de uso e os períodos de cobrança do azure podem ser diferentes entre clientes enterprise,web direct e CSP
+3- localização: a localização também influencia no preço, por que a infra da azure é distribuídas globalmente e os custos podem variar em produtos,serviços e recursos do azure
+4- largura de banda: as trasferências de dados que entram no datacenter da azure são gratuitas mais que saem do datacenter, os preços são baseado nas nuvem
+5 - instâncias reservadas: eu tenho 1 serviço em tres anos ligado direto, os contatos podem reduzir em até 72% confome o uso
+6 - benefícios do uso hibrido: permite que vc use licencias locais e joga na nuvem
+
+calculadora: é uma ferramenta que você consegue calcular o custos dos produtos,serviços etc
+
+calculadora do custo total de propriedade
+- uma ferramenta que estima a economia de custo possível ao migrar pro azure
+- relatorio de comparação com o cusuto locais com o uso de produtos e serviço do azure na nuvem
+
+gerenciamento de custos do azure:
+- relatórios de cobrança
+- orçamentos- definir orçamento de gastos
+- alerta - quando os custos excedem os limites
+- recomendação - recomendação de custos
+
+SLAs - contartos de nivel de serviço
+
+contrato que você tem de serviço com a Microsoft, como tempo de atividade e conectividade
+- metas de desempenho variam de 99% e 99,999%
+
+reduzir seu SLA
+- adicionar mais serviço
+- escolhendo serviços gratuitos ou sem SLA
+
+aumentar seu SLA
+- zonas de disponibilidade
+- sistemas redundantes
+
+muitos fatores podem impactar nisso
+
+programa de pre-visualização do azure, você pode
+- testar versões beta
+- outros recursos
+- pre lançamento
+- software
+
+todos os clientes da azure podem visualizar
+
+geralmente disponivel(GA): depois que a visualização publica é concluda , todos os clientes podem usar o recurso e a disponibilidade da região varia
+
+
+serviços de monitoramento e atualizações de recursos
+- as atualizações do azure fornecem informações sobre os produtos,serviços e recursos do azure
+- detalhes sobre todas as atualizações do azure e seu status
+- navegue e pesquise por atualizações
+- assine notoificações de atualizações do azure por RSS
 
 
 
