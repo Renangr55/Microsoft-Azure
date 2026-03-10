@@ -3,17 +3,29 @@ A lógica:
 1- quem são os primeiros princípios?
 anotações: são verdades óbvias que é começo da ciência, essas verdades são responsável que contistituem o fundamento sobre qual repousa todo conhecimento. elas são autoevidentes e podem ser concebidas como princípios.
 
-Resposta: primeiro princípios são verdades fundamentais que fundamentam uma dedução lógica as quais se baseiam as conclusões, onde habita todo o conhecimento
+R: primeiro princípios são verdades fundamentais que fundamentam uma dedução lógica as quais se baseiam as conclusões, onde habita todo o conhecimento
 
 2- Por que começar com lógica?
-Resposta: a lógica é como uma ordem em que você organiza as suas tomada de decisões, então, começar pela lógica é organizar fatos, conhecimentos e pensamento sobre devido e descobrir o melhor caminho para descobrir ou resolver algo.
+Resposta:por que a lógica é como uma ordem em que você organiza as suas tomada de decisões, todas as conclusões a respeito de uma realidade vem da lógica
 
 3- qual o princípio primeiro da lógica?
+R: Lei da não-contradição (LNC)
 
 4- a lei da não contradição é inevitável?
+R: Sim, a lei da não-contradição é inevitável, por que quando o indivíduo nega a lei da não contradição, ele já esta fazendo o uso dela. Se uma pessoa falasse: "Não acredito na existência de Deus e também não acredito na LNC", nesse exemplo, o indivíduo afirma que seu posicionamento é verdadeiro e oposto á falsa, e dessa maneira, que o LNC é aplicado e se torna inevítavel
 
-5- E se a lógica não se aplica a realidade?
+5- E se tudo não for nada além de ilusão?
+R: Então, a busca pela verdade seria um assunto sem fundamento e sentido
 
-6- se fosse empregada a lógica oriental?
+6- E se a lógica não se aplica a realidade?
 
-7- podem-se aplicar as leis da lógica como teste da verdade?
+
+7- se fosse empregada a lógica oriental?
+
+8- podem-se aplicar as leis da lógica como teste da verdade? 
+
+leis da lógica:
+- LID(Lei da identidade doravante) essa lei afirma que A é A
+- LTE(Lei do terceiro excluido) declara que ou é A ou não é a
+todo raciocionio vem desses principios
+
